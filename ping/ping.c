@@ -65,4 +65,27 @@ int main(int argc,char **argv)
     set_sighandler();
     printf("Ping %s(%s):%d bytes data in ICMP packets.\n",argv[1],inet_ntoa(dest.sin_addr),datalen);
 
+    if((settimer(ITIMER_REAL,&val_alarm,NULL)) == -1)
+    {
+        bail("setitimer fails.");
+    }
+
+    recv_reply(); 
+
+    return 0;
+
+}
+
+
+void send_ping(void)
+{
+
+    struct ipheader *ip_hdr;
+    struct icmpheader *icmp_hdr;
+
+    int len;
+    int len1;
+
+
+    ip_hdr = (struct ipheader *)sendbuf;
 }
