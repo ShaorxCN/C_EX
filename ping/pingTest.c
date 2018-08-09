@@ -274,5 +274,4 @@ void alarm_handler(int signo)
 {  
     send_ping();    /*发送ping消息*/  
   
-}<strong>
-</strong>
+}

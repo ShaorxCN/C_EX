@@ -61,7 +61,7 @@ int datalen = DEFAULT_LEN;  // ICMP 消息携带的数据长度
 char sendbuf[BUFSIZE];     // 发送的字符串数组
 char recvbuf[BUFSIZE];
 
-int nsent;          // 发送的icmp序号 因为icmp其实是在ip消息的数据段
+int nsent;          // 发送的icmp序号 因为icmp其实是在ip消息的数据段  静态去默认0
 int nrecv;          // 接收的icmp消息序号
 
 pid_t pid;          // ping进程的pid
