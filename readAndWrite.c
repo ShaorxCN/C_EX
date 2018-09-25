@@ -14,7 +14,7 @@ int main(int argc,char **argv)
     char buf[128];
 
     if(argc < 3){
-        printf("Usage:write_test FILEREAD FILEWRITE\n");
+        printf("Usage:cp FILEREAD FILEWRITE\n");
         return -1;
     }
 
