@@ -32,7 +32,7 @@ int main(int argc,char **argv)
     }
 
     for(i = 0;i<SIZE;i++){
-        scanf("%s%d\n",std[i].name,&std[i].num);
+        scanf("%s%d",std[i].name,&std[i].num);
     }
 
     i = fwrite(std,sizeof(student),SIZE,fp);
